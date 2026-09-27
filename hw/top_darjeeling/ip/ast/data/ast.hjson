@@ -6,6 +6,14 @@
 // *Module Description: Analog Sensors Top Registers
 //#############################################################################
 { name:               "ast",
+  human_name:         "Analog Sensor Top",
+  one_line_desc:      "Analog functions and physical security sensors for OpenTitan",
+  one_paragraph_desc: '''
+  Analog Sensor Top is OpenTitan's analog and security companion. It provides analog functions,
+  including clocks, regulators, and random number generators, that are needed for device operation.
+  It also provides physical security sensors that help protect the device from physical attacks or
+  manipulation.
+  '''
   // Unique comportable IP identifier defined under KNOWN_CIP_IDS in the regtool.
   cip_id:             "34",
   design_spec:        "../doc",

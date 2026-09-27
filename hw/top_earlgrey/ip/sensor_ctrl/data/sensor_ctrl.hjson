@@ -6,6 +6,13 @@
 #
 {
   name:               "sensor_ctrl",
+  human_name:         "Sensor Controller",
+  one_line_desc:      "Comportable front end for Analog Sensor Top",
+  one_paragraph_desc: '''
+  Sensor Controller connects Analog Sensor Top to OpenTitan's alert, wakeup, status, and debug
+  infrastructure. It handshakes alert events, forwards alerts to Alert Handler, reports status,
+  connects debug signals to pads, and can request a system wakeup when an alert event occurs.
+  '''
   // Unique comportable IP identifier defined under KNOWN_CIP_IDS in the regtool.
   cip_id:             "35",
   design_spec:        "../doc",

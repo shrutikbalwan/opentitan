@@ -9,6 +9,14 @@ chars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 %>
 {
   name:               "${module_instance_name}",
+  human_name:         "Alert Handler",
+  one_line_desc:      "Security alert classification, interrupt, and escalation controller",
+  one_paragraph_desc: '''
+  Alert Handler gathers security alerts from peripherals and converts them into interrupts for the
+  processor. It classifies alerts and periodically checks alert sources through a ping mechanism.
+  If software does not handle an interrupt in time, configurable escalation signals allow hardware
+  to respond to the threat.
+  '''
   // Unique comportable IP identifier defined under KNOWN_CIP_IDS in the regtool.
   cip_id:             "32",
   design_spec:        "../doc",
